@@ -27,7 +27,6 @@ public void setWidth(double width) {
 }
 
 
-
 public static void main(String [] args) {
 	Rectangle r = new Rectangle (4,5);
 	Rectangle r2= new Rectangle (3,6);
@@ -42,9 +41,15 @@ public double computeArea() {
 }
 public double computePerimeter() {
 	return 2*this.length + 2 * this.width;
-
+}
+public boolean isSmaller(Rectangle other) {
+	return this.computeArea()< other.computeArea();
+}
+public boolean isSquare() {
+	return this.width == this.length;
+}
 	
 }
-	}
+	
 
 
